@@ -1,0 +1,61 @@
+<%= form_for(@network_user) do |f| %>
+  <% if @network_user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@network_user.errors.count, "error") %> prohibited this network_user from being saved:</h2>
+
+      <ul>
+      <% @network_user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :NetworkUserId %><br>
+    <%= f.number_field :NetworkUserId %>
+  </div>
+  <div class="field">
+    <%= f.label :NetworkFirstName %><br>
+    <%= f.text_field :NetworkFirstName %>
+  </div>
+  <div class="field">
+    <%= f.label :NetworkLastName %><br>
+    <%= f.text_field :NetworkLastName %>
+  </div>
+  <div class="field">
+    <%= f.label :Email %><br>
+    <%= f.text_field :Email %>
+  </div>
+  <div class="field">
+    <%= f.label :NetworkUserName %><br>
+    <%= f.text_field :NetworkUserName %>
+  </div>
+  <div class="field">
+    <%= f.label :NetworkPassword %><br>
+    <%= f.text_field :NetworkPassword %>
+  </div>
+  <div class="field">
+    <%= f.label :CreatedBy %><br>
+    <%= f.text_field :CreatedBy %>
+  </div>
+  <div class="field">
+    <%= f.label :CreatedDate %><br>
+    <%= f.datetime_select :CreatedDate %>
+  </div>
+  <div class="field">
+    <%= f.label :LastModifiedBy %><br>
+    <%= f.text_field :LastModifiedBy %>
+  </div>
+  <div class="field">
+    <%= f.label :LastModifiedDate %><br>
+    <%= f.datetime_select :LastModifiedDate %>
+  </div>
+  <div class="field">
+    <%= f.label :IsDeleted %><br>
+    <%= f.check_box :IsDeleted %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

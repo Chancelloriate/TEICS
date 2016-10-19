@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  AuditLogId: 1
+  RecordId: 1
+  TableName: MyString
+  Attribute: MyString
+  PreviousValue: MyString
+  CurrentValue: MyString
+  CreatedBy: MyString
+  CreatedDate: 2016-10-18 00:57:17
+  LastModifiedBy: MyString
+  LastModifiedDate: 2016-10-18 00:57:17
+  IsDeleted: false
+
+two:
+  AuditLogId: 1
+  RecordId: 1
+  TableName: MyString
+  Attribute: MyString
+  PreviousValue: MyString
+  CurrentValue: MyString
+  CreatedBy: MyString
+  CreatedDate: 2016-10-18 00:57:17
+  LastModifiedBy: MyString
+  LastModifiedDate: 2016-10-18 00:57:17
+  IsDeleted: false

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  SourceLinkId: 1
+  Hyperlink: MyString
+  CreatedBy: MyString
+  CreatedDate: 2016-10-18 00:49:38
+  LastModifiedBy: MyString
+  LastModifiedDate: 2016-10-18 00:49:38
+  IsDeleted: false
+
+two:
+  SourceLinkId: 1
+  Hyperlink: MyString
+  CreatedBy: MyString
+  CreatedDate: 2016-10-18 00:49:38
+  LastModifiedBy: MyString
+  LastModifiedDate: 2016-10-18 00:49:38
+  IsDeleted: false

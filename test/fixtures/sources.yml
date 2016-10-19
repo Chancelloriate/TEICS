@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  SourceId: 1
+  SourceDescription: MyString
+  CreatedBy: MyString
+  CreatedDate: 2016-10-18 00:48:13
+  LastModifiedBy: MyString
+  LastModifiedDate: 2016-10-18 00:48:13
+  IsDeleted: false
+
+two:
+  SourceId: 1
+  SourceDescription: MyString
+  CreatedBy: MyString
+  CreatedDate: 2016-10-18 00:48:13
+  LastModifiedBy: MyString
+  LastModifiedDate: 2016-10-18 00:48:13
+  IsDeleted: false

@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Userstoreid:</strong>
+  <%= @user_store.UserStoreId %>
+</p>
+
+<p>
+  <strong>Sourceid:</strong>
+  <%= @user_store.SourceId %>
+</p>
+
+<p>
+  <strong>Environmentid:</strong>
+  <%= @user_store.EnvironmentId %>
+</p>
+
+<p>
+  <strong>Identitytypeid:</strong>
+  <%= @user_store.IdentityTypeId %>
+</p>
+
+<p>
+  <strong>Userstorename:</strong>
+  <%= @user_store.UserStoreName %>
+</p>
+
+<p>
+  <strong>Userstorepassword:</strong>
+  <%= @user_store.UserStorePassword %>
+</p>
+
+<p>
+  <strong>Userstoreexpirationdate:</strong>
+  <%= @user_store.UserStoreExpirationDate %>
+</p>
+
+<p>
+  <strong>Createdby:</strong>
+  <%= @user_store.CreatedBy %>
+</p>
+
+<p>
+  <strong>Createddate:</strong>
+  <%= @user_store.CreatedDate %>
+</p>
+
+<p>
+  <strong>Lastmodifiedby:</strong>
+  <%= @user_store.LastModifiedBy %>
+</p>
+
+<p>
+  <strong>Lastmodifieddate:</strong>
+  <%= @user_store.LastModifiedDate %>
+</p>
+
+<p>
+  <strong>Isdeleted:</strong>
+  <%= @user_store.IsDeleted %>
+</p>
+
+<%= link_to 'Edit', edit_user_store_path(@user_store) %> |
+<%= link_to 'Back', user_stores_path %>

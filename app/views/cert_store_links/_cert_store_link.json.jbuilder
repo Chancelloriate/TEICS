@@ -1,0 +1,2 @@
+json.extract! cert_store_link, :id, :CertStoreLinkId, :SourceLinkId, :CertStoreId, :CreatedBy, :CreatedDate, :LastModifiedBy, :LastModifiedDate, :IsDeleted, :created_at, :updated_at
+json.url cert_store_link_url(cert_store_link, format: :json)

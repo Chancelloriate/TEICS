@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Teics Audit Logs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Auditlogid</th>
+      <th>Recordid</th>
+      <th>Tablename</th>
+      <th>Attribute</th>
+      <th>Previousvalue</th>
+      <th>Currentvalue</th>
+      <th>Createdby</th>
+      <th>Createddate</th>
+      <th>Lastmodifiedby</th>
+      <th>Lastmodifieddate</th>
+      <th>Isdeleted</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @teics_audit_logs.each do |teics_audit_log| %>
+      <tr>
+        <td><%= teics_audit_log.AuditLogId %></td>
+        <td><%= teics_audit_log.RecordId %></td>
+        <td><%= teics_audit_log.TableName %></td>
+        <td><%= teics_audit_log.Attribute %></td>
+        <td><%= teics_audit_log.PreviousValue %></td>
+        <td><%= teics_audit_log.CurrentValue %></td>
+        <td><%= teics_audit_log.CreatedBy %></td>
+        <td><%= teics_audit_log.CreatedDate %></td>
+        <td><%= teics_audit_log.LastModifiedBy %></td>
+        <td><%= teics_audit_log.LastModifiedDate %></td>
+        <td><%= teics_audit_log.IsDeleted %></td>
+        <td><%= link_to 'Show', teics_audit_log %></td>
+        <td><%= link_to 'Edit', edit_teics_audit_log_path(teics_audit_log) %></td>
+        <td><%= link_to 'Destroy', teics_audit_log, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Teics audit log', new_teics_audit_log_path %>

@@ -1,0 +1,2 @@
+json.extract! user_source_link, :id, :UserSourceLinkId, :SourceLinkId, :UserStoreId, :CreatedBy, :CreatedDate, :LastModifiedBy, :LastModifiedDate, :IsDeleted, :created_at, :updated_at
+json.url user_source_link_url(user_source_link, format: :json)

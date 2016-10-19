@@ -1,0 +1,2 @@
+json.extract! store_access, :id, :StoreAccessId, :UserStoreId, :CertStoreId, :NetworkId, :CreatedBy, :CreatedDate, :LastModifiedBy, :LastModifiedDate, :IsDeleted, :created_at, :updated_at
+json.url store_access_url(store_access, format: :json)

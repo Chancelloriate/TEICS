@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  MemberGroupId: 1
+  NetworkUserId: 1
+  UserGroupId: 1
+  CreatedBy: MyString
+  CreatedDate: 2016-10-18 00:54:36
+  LastModifiedBy: MyString
+  LastModifiedDate: 2016-10-18 00:54:36
+  IsDeleted: false
+
+two:
+  MemberGroupId: 1
+  NetworkUserId: 1
+  UserGroupId: 1
+  CreatedBy: MyString
+  CreatedDate: 2016-10-18 00:54:36
+  LastModifiedBy: MyString
+  LastModifiedDate: 2016-10-18 00:54:36
+  IsDeleted: false

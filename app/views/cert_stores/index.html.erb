@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Cert Stores</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Certstoreid</th>
+      <th>Sourceid</th>
+      <th>Environmentid</th>
+      <th>Identitytypeid</th>
+      <th>Certstorename</th>
+      <th>Certstoredescription</th>
+      <th>Certstorepassword</th>
+      <th>Certstoreexpirationdate</th>
+      <th>Unc</th>
+      <th>Mimetype</th>
+      <th>Createdby</th>
+      <th>Createddate</th>
+      <th>Lastmodifiedby</th>
+      <th>Lastmodifieddate</th>
+      <th>Isdeleted</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cert_stores.each do |cert_store| %>
+      <tr>
+        <td><%= cert_store.CertStoreId %></td>
+        <td><%= cert_store.SourceId %></td>
+        <td><%= cert_store.EnvironmentId %></td>
+        <td><%= cert_store.IdentityTypeId %></td>
+        <td><%= cert_store.CertStoreName %></td>
+        <td><%= cert_store.CertStoreDescription %></td>
+        <td><%= cert_store.CertStorePassword %></td>
+        <td><%= cert_store.CertStoreExpirationDate %></td>
+        <td><%= cert_store.UNC %></td>
+        <td><%= cert_store.MimeType %></td>
+        <td><%= cert_store.CreatedBy %></td>
+        <td><%= cert_store.CreatedDate %></td>
+        <td><%= cert_store.LastModifiedBy %></td>
+        <td><%= cert_store.LastModifiedDate %></td>
+        <td><%= cert_store.IsDeleted %></td>
+        <td><%= link_to 'Show', cert_store %></td>
+        <td><%= link_to 'Edit', edit_cert_store_path(cert_store) %></td>
+        <td><%= link_to 'Destroy', cert_store, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cert store', new_cert_store_path %>

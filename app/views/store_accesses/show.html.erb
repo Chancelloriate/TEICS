@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Storeaccessid:</strong>
+  <%= @store_access.StoreAccessId %>
+</p>
+
+<p>
+  <strong>Userstoreid:</strong>
+  <%= @store_access.UserStoreId %>
+</p>
+
+<p>
+  <strong>Certstoreid:</strong>
+  <%= @store_access.CertStoreId %>
+</p>
+
+<p>
+  <strong>Networkid:</strong>
+  <%= @store_access.NetworkId %>
+</p>
+
+<p>
+  <strong>Createdby:</strong>
+  <%= @store_access.CreatedBy %>
+</p>
+
+<p>
+  <strong>Createddate:</strong>
+  <%= @store_access.CreatedDate %>
+</p>
+
+<p>
+  <strong>Lastmodifiedby:</strong>
+  <%= @store_access.LastModifiedBy %>
+</p>
+
+<p>
+  <strong>Lastmodifieddate:</strong>
+  <%= @store_access.LastModifiedDate %>
+</p>
+
+<p>
+  <strong>Isdeleted:</strong>
+  <%= @store_access.IsDeleted %>
+</p>
+
+<%= link_to 'Edit', edit_store_access_path(@store_access) %> |
+<%= link_to 'Back', store_accesses_path %>

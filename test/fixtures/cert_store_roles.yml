@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  CertStoreRoleId: 1
+  RoleId: 1
+  CertStoreId: 1
+  CreatedBy: MyString
+  CreatedDate: 2016-10-18 00:46:08
+  LastModifiedBy: MyString
+  LastModifiedDate: 2016-10-18 00:46:08
+  IsDeleted: false
+
+two:
+  CertStoreRoleId: 1
+  RoleId: 1
+  CertStoreId: 1
+  CreatedBy: MyString
+  CreatedDate: 2016-10-18 00:46:08
+  LastModifiedBy: MyString
+  LastModifiedDate: 2016-10-18 00:46:08
+  IsDeleted: false

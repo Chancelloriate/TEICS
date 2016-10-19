@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Store Accesses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Storeaccessid</th>
+      <th>Userstoreid</th>
+      <th>Certstoreid</th>
+      <th>Networkid</th>
+      <th>Createdby</th>
+      <th>Createddate</th>
+      <th>Lastmodifiedby</th>
+      <th>Lastmodifieddate</th>
+      <th>Isdeleted</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @store_accesses.each do |store_access| %>
+      <tr>
+        <td><%= store_access.StoreAccessId %></td>
+        <td><%= store_access.UserStoreId %></td>
+        <td><%= store_access.CertStoreId %></td>
+        <td><%= store_access.NetworkId %></td>
+        <td><%= store_access.CreatedBy %></td>
+        <td><%= store_access.CreatedDate %></td>
+        <td><%= store_access.LastModifiedBy %></td>
+        <td><%= store_access.LastModifiedDate %></td>
+        <td><%= store_access.IsDeleted %></td>
+        <td><%= link_to 'Show', store_access %></td>
+        <td><%= link_to 'Edit', edit_store_access_path(store_access) %></td>
+        <td><%= link_to 'Destroy', store_access, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Store access', new_store_access_path %>

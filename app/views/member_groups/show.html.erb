@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Membergroupid:</strong>
+  <%= @member_group.MemberGroupId %>
+</p>
+
+<p>
+  <strong>Networkuserid:</strong>
+  <%= @member_group.NetworkUserId %>
+</p>
+
+<p>
+  <strong>Usergroupid:</strong>
+  <%= @member_group.UserGroupId %>
+</p>
+
+<p>
+  <strong>Createdby:</strong>
+  <%= @member_group.CreatedBy %>
+</p>
+
+<p>
+  <strong>Createddate:</strong>
+  <%= @member_group.CreatedDate %>
+</p>
+
+<p>
+  <strong>Lastmodifiedby:</strong>
+  <%= @member_group.LastModifiedBy %>
+</p>
+
+<p>
+  <strong>Lastmodifieddate:</strong>
+  <%= @member_group.LastModifiedDate %>
+</p>
+
+<p>
+  <strong>Isdeleted:</strong>
+  <%= @member_group.IsDeleted %>
+</p>
+
+<%= link_to 'Edit', edit_member_group_path(@member_group) %> |
+<%= link_to 'Back', member_groups_path %>

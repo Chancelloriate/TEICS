@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  EnvironmentId: 1
+  EnvironmentName: MyString
+  EnvironmentDescription: MyString
+  CreatedBy: MyString
+  CreatedDate: 2016-10-18 00:51:53
+  LastModifiedBy: MyString
+  LastModifiedDate: 2016-10-18 00:51:53
+  IsDeleted: false
+
+two:
+  EnvironmentId: 1
+  EnvironmentName: MyString
+  EnvironmentDescription: MyString
+  CreatedBy: MyString
+  CreatedDate: 2016-10-18 00:51:53
+  LastModifiedBy: MyString
+  LastModifiedDate: 2016-10-18 00:51:53
+  IsDeleted: false

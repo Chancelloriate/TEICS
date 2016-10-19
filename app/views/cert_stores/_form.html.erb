@@ -1,0 +1,77 @@
+<%= form_for(@cert_store) do |f| %>
+  <% if @cert_store.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cert_store.errors.count, "error") %> prohibited this cert_store from being saved:</h2>
+
+      <ul>
+      <% @cert_store.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :CertStoreId %><br>
+    <%= f.number_field :CertStoreId %>
+  </div>
+  <div class="field">
+    <%= f.label :SourceId %><br>
+    <%= f.number_field :SourceId %>
+  </div>
+  <div class="field">
+    <%= f.label :EnvironmentId %><br>
+    <%= f.number_field :EnvironmentId %>
+  </div>
+  <div class="field">
+    <%= f.label :IdentityTypeId %><br>
+    <%= f.number_field :IdentityTypeId %>
+  </div>
+  <div class="field">
+    <%= f.label :CertStoreName %><br>
+    <%= f.text_field :CertStoreName %>
+  </div>
+  <div class="field">
+    <%= f.label :CertStoreDescription %><br>
+    <%= f.text_field :CertStoreDescription %>
+  </div>
+  <div class="field">
+    <%= f.label :CertStorePassword %><br>
+    <%= f.text_field :CertStorePassword %>
+  </div>
+  <div class="field">
+    <%= f.label :CertStoreExpirationDate %><br>
+    <%= f.datetime_select :CertStoreExpirationDate %>
+  </div>
+  <div class="field">
+    <%= f.label :UNC %><br>
+    <%= f.text_field :UNC %>
+  </div>
+  <div class="field">
+    <%= f.label :MimeType %><br>
+    <%= f.text_field :MimeType %>
+  </div>
+  <div class="field">
+    <%= f.label :CreatedBy %><br>
+    <%= f.text_field :CreatedBy %>
+  </div>
+  <div class="field">
+    <%= f.label :CreatedDate %><br>
+    <%= f.datetime_select :CreatedDate %>
+  </div>
+  <div class="field">
+    <%= f.label :LastModifiedBy %><br>
+    <%= f.text_field :LastModifiedBy %>
+  </div>
+  <div class="field">
+    <%= f.label :LastModifiedDate %><br>
+    <%= f.datetime_select :LastModifiedDate %>
+  </div>
+  <div class="field">
+    <%= f.label :IsDeleted %><br>
+    <%= f.check_box :IsDeleted %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
